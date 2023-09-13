@@ -1,0 +1,225 @@
+@import url(./variable.css);
+@import url(./fontSizeReset.css);
+
+/* RESET CSS */
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* FONT-FAMILY */
+@font-face {
+  font-family: "poppins-regular";
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: "poppins-bold";
+  src: url(../fonts/Poppins/Poppins-Bold.ttf);
+}
+
+html {
+  font-size: calc(12px + 0.390625vw);
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+body {
+  background-color: #222;
+  font-family: "poppins-regular";
+  overflow-x: hidden;
+}
+
+/* CONTENT SECTION FOR SMOOTH SCROLL */
+.smooth-scroll-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  overflow: hidden;
+}
+
+/* NAVBAR DESKTOP */
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav .innerNav {
+  position: fixed;
+  top: 0;
+  width: var(--maxWidth);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  z-index: 7;
+}
+
+nav ul {
+  display: flex;
+  column-gap: 10px;
+}
+
+nav ul li a::after {
+  display: block;
+  content: "";
+  border-bottom: 2px solid #fff;
+  transform: scaleX(0);
+  transition: 0.3s ease-out;
+}
+
+nav ul li a:hover:after {
+  transform: scaleX(0.5);
+}
+
+/* LOGO */
+.logo {
+  width: 160px;
+  height: 48px;
+}
+
+.logo img {
+  position: relative;
+  top: -10px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*---- MENU FOR MOBILE ----*/
+.nav-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
+  background: #120f2291;
+  backdrop-filter: blur(5px);
+  transform: translateX(-100%);
+  transition: transform 0.7s cubic-bezier(0.32, 2, 0.55, 0.27);
+  z-index: 6;
+}
+
+.nav-mobile a {
+  transition: 0.5s;
+  font-size: clamp(40px, 3.3vw, 50px);
+  font-weight: bold;
+}
+
+.nav-mobile a:hover {
+  transform: scale(0.8);
+}
+
+.nav-mobile.active {
+  transform: translateX(0);
+}
+
+/* BURGER MENU */
+.toggle-nav {
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 30px;
+  height: 50px;
+  width: 50px;
+  font-size: 1.5em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  z-index: 10;
+}
+
+.line {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: var(--primary-color);
+  transition: transform 0.3s ease-out, opacity 0.1s ease-in;
+}
+
+.l1 {
+  transform: translateY(-10px);
+}
+
+.l3 {
+  transform: translateY(10px);
+}
+
+.toggle-nav.active .l1 {
+  transform: translateY(0) rotate(135deg);
+}
+
+.toggle-nav.active .l2 {
+  opacity: 0;
+}
+
+.toggle-nav.active .l3 {
+  transform: translateY(0) rotate(-135deg);
+}
+
+/*---- END OF MOBILE PART ----*/
+
+/* HEADER */
+header {
+  width: 100%;
+  height: 100vh;
+  background-color: crimson;
+}
+
+/* SECTION */
+section {
+  width: var(--maxWidth);
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.section1 {
+  background-color: blue;
+}
+
+.section2 {
+  background-color: red;
+}
+
+/*---- RESPONSIVE ----*/
+/* TABLET */
+@media screen and (max-width: 845px) {
+  .toggle-nav {
+    display: flex;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: flex;
+  }
+}
+
+/* MOBILE */
+@media screen and (max-width: 400px) {}

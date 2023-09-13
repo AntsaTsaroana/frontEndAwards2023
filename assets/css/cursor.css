@@ -1,0 +1,23 @@
+@import url(./variable.css);
+
+/* CURSOR */
+.cursor {
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+  background-color: transparent;
+  transition-property: transform;
+  user-select: none;
+  pointer-events: none;
+  z-index: 8;
+  transition: all 0.3s ease;
+  transition-property: width, height;
+  
+}
+
+.cursor.active {
+  width: 80px;
+  height: 80px;
+}

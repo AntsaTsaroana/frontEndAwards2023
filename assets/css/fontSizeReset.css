@@ -1,0 +1,28 @@
+@import url(./variable.css);
+@import url(./main.css);
+
+h1 {
+  font-size: calc(2em + 0.390625vw);
+}
+
+h2 {
+  font-size: calc(1.5em + 0.390625vw);
+}
+
+h3 {
+  font-size: calc(1.25em + 0.390625vw);
+}
+
+h4 {
+  font-size: calc(1.1em + 0.390625vw);
+}
+
+a {
+  font-size: clamp(16px, 1.5vw, 15px);
+}
+
+p {
+  /* font-size: calc(12px + 0.390625vw); */
+  font-size: clamp(12px, 1vw, 15px);
+  line-height:20px;
+}

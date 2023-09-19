@@ -44,6 +44,11 @@ body {
   overflow-x: hidden;
 }
 
+.hideElement {
+  position: relative;
+  overflow: hidden;
+}
+
 /* CONTENT SECTION FOR SMOOTH SCROLL */
 .smooth-scroll-wrapper {
   position: fixed;
@@ -74,7 +79,7 @@ nav .innerNav {
 
 nav ul {
   display: flex;
-  column-gap: 10px;
+  column-gap: 1.5em;
 }
 
 nav ul li a::after {
@@ -117,7 +122,8 @@ nav ul li a:hover:after {
   background: #120f2291;
   backdrop-filter: blur(5px);
   transform: translateX(-100%);
-  transition: transform 0.7s cubic-bezier(0.32, 2, 0.55, 0.27);
+  /* transition: transform 0.7s cubic-bezier(0.32, 2, 0.55, 0.27); */
+  transition: transform 0.7s ease;
   z-index: 6;
 }
 
@@ -127,8 +133,19 @@ nav ul li a:hover:after {
   font-weight: bold;
 }
 
-.nav-mobile a:hover {
+.nav-mobile .hideElement a {
+  display: block;
+  position: relative;
+  top: 85%;
+  transition: top 0.7s ease 0s;
+}
+
+.nav-mobile .hideElement a:hover {
   transform: scale(0.8);
+}
+
+.nav-mobile .hideElement a.active {
+  transition: top 0.7s ease var(--i), transform 0.2s linear 0s;
 }
 
 .nav-mobile.active {
@@ -222,4 +239,5 @@ section {
 }
 
 /* MOBILE */
-@media screen and (max-width: 400px) {}
+@media screen and (max-width: 400px) {
+}

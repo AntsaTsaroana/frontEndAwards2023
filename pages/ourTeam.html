@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/favicon/favicon-16x16.png"
+    />
+    <title>team Section</title>
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/loading.css" />
+    <link rel="stylesheet" href="../assets/css/cursor.css" />
+    <link rel="stylesheet" href="../assets/css/customScrollBar..css" />
+    <link rel="stylesheet" href="../assets/css/teamSection.css" />
+  </head>
+  <body>
+    <!-- CURSOR -->
+    <div class="cursor"></div>
+
+    <!-- LOADING -->
+    <div class="wrapperLoad">
+      <div class="loader">
+        <span>
+          <h2 id="pourcentage">0%</h2>
+          <h1>RETINA</h1>
+          <div class="container-progress-bar">
+            <span id="progress-bar"></span>
+          </div>
+        </span>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav>
+      <div class="innerNav">
+        <div class="logo">
+          <img src="../assets/img/logo.png" style="top: 5px" alt="logo" />
+        </div>
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+        </ul>
+
+        <!-- Nav Mobile -->
+        <div class="nav-mobile">
+          <span class="hideElement">
+            <a href="../index.html" class="active" style="--i: 0.5s">Accueil</a>
+          </span>
+        </div>
+        <!-- Burger Menu -->
+        <button type="button" aria-label="burger Menu" class="toggle-nav">
+          <span class="line l1"></span>
+          <span class="line l2"></span>
+          <span class="line l3"></span>
+        </button>
+      </div>
+    </nav>
+    <main>
+      <!-- TEAM NAME -->
+      <section class="teamName">
+        <span>
+          <h1 class="noStroke active"></h1>
+          <h1 class="stroke active"></h1>
+        </span>
+        <div class="profil"></div>
+        <img
+          src="../assets/img/team/TSAROANA-noBG.webp"
+          class="image"
+          alt="profil"
+        />
+        <div class="profil"></div>
+        <img
+          src="../assets/img/team/FANA-noBG.webp"
+          class="image"
+          alt="profil"
+        />
+        <div class="profil"></div>
+        <img
+          src="../assets/img/team/AINA-noBG.webp"
+          class="image"
+          alt="profil"
+          style="object-fit: contain"
+        />
+        <div
+          class="profil active revealed"
+          style="--scale: 1; --delay: 4s"
+        ></div>
+        <img
+          src="../assets/img/logo/retinaLogoOnly.png"
+          class="image active revealed"
+          style="transform: scale(0.7); --scale: 0.7; --delay: 4.2s"
+          alt="profil"
+        />
+      </section>
+      <!-- TEAM INFORMATION -->
+      <section class="teamInfo">
+        <div class="detail">
+          <h2>Antsa Tsaroana</h2>
+          <h3><i>Creative developper</i></h3>
+          <a href="#">
+            <button>
+              <span class="githubLogo">
+                <img src="../assets/img/logo/github-mark-white.png" alt="" />
+              </span>
+              Github
+            </button>
+          </a>
+        </div>
+        <div class="detail">
+          <h2>Fanantenana Emmanuel</h2>
+          <h3><i>Integrator</i></h3>
+          <a href="#">
+            <button>
+              <span class="githubLogo">
+                <img src="../assets/img/logo/github-mark-white.png" alt="" />
+              </span>
+              Github
+            </button>
+          </a>
+        </div>
+        <div class="detail">
+          <h2>Aina Rabearisoa</h2>
+          <h3><i>Web designer</i></h3>
+          <a href="#">
+            <button>
+              <span class="githubLogo">
+                <img src="../assets/img/logo/github-mark-white.png" alt="" />
+              </span>
+              Github
+            </button>
+          </a>
+        </div>
+        <div class="detail active">
+          <span class="hideElement">
+            <h2 class="revealed" style="--delay:4.5s">Team Retina</h2>
+          </span>
+          <span class="hideElement">
+            <h3 class="revealed" style="--delay:4.7s"><i>Developper & UI/UX Designer</i></h3>
+          </span>
+        </div>
+      </section>
+      <!-- TEAM NAVIGATION -->
+      <section class="teamImg">
+        <div class="wrapperTeam">
+          <div class="innerWrap" style="--delay: 4.9s">
+            <div class="navImg" data-name="Antsa Tsaroana">
+              <img src="../assets/img/team/TSAROANA-noBG.webp" alt="profil" />
+            </div>
+          </div>
+          <div class="innerWrap" style="--delay: 5.1s">
+            <div class="navImg" data-name="Fanantenana Manu">
+              <img src="../assets/img/team/FANA-noBG.webp" alt="profil" />
+            </div>
+          </div>
+          <div class="innerWrap" style="--delay: 5.2s">
+            <div class="navImg" data-name="Aina Rabearisoa">
+              <img src="../assets/img/team/AINA-noBG.webp" alt="profil" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Script -->
+    <script src="../assets/js/loadingScreen.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/cursor.js"></script>
+    <script src="../assets/js/burgerMenu.js"></script>
+    <script src="../assets/js/teamScript.js"></script>
+  </body>
+</html>

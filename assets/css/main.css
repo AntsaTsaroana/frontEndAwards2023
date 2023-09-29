@@ -1,5 +1,7 @@
 @import url(./variable.css);
 @import url(./fontSizeReset.css);
+@import url(./section1.css);
+@import url(./section2.css);
 
 /* RESET CSS */
 *,
@@ -9,16 +11,6 @@
   margin: 0;
   box-sizing: border-box;
   /* border: 1px solid red; */
-}
-
-a {
-  text-decoration: none;
-  color: var(--primary-color);
-  cursor: pointer;
-}
-
-ul {
-  list-style-type: none;
 }
 
 /* FONT-FAMILY */
@@ -42,11 +34,6 @@ body {
   background-color: #222;
   font-family: "poppins-regular";
   overflow-x: hidden;
-}
-
-.hideElement {
-  position: relative;
-  overflow: hidden;
 }
 
 /* CONTENT SECTION FOR SMOOTH SCROLL */
@@ -91,7 +78,15 @@ nav ul li a::after {
 }
 
 nav ul li a:hover:after {
-  transform: scaleX(0.5);
+  transform: scaleX(0.3);
+}
+
+nav ul li a.active::after {
+  display: block;
+  content: "";
+  border-bottom: 2px solid #fff;
+  transform: scaleX(1); /* Pour activer la barre sous-jacente */
+  transition: 0.3s ease-out;
 }
 
 /* LOGO */
@@ -103,6 +98,7 @@ nav ul li a:hover:after {
 .logo img {
   position: relative;
   top: -10px;
+  left: -25px;
   width: 100%;
   object-fit: cover;
 }
@@ -121,10 +117,14 @@ nav ul li a:hover:after {
   row-gap: 20px;
   background: #120f2291;
   backdrop-filter: blur(5px);
-  transform: translateX(-100%);
+  clip-path: circle(0% at 50% 0);
   /* transition: transform 0.7s cubic-bezier(0.32, 2, 0.55, 0.27); */
-  transition: transform 0.7s ease;
+  transition: 0.7s ease;
   z-index: 6;
+}
+
+.nav-mobile.active {
+  clip-path: circle(120vh at 49% 0);
 }
 
 .nav-mobile a {
@@ -146,10 +146,6 @@ nav ul li a:hover:after {
 
 .nav-mobile .hideElement a.active {
   transition: top 0.7s ease var(--i), transform 0.2s linear 0s;
-}
-
-.nav-mobile.active {
-  transform: translateX(0);
 }
 
 /* BURGER MENU */
@@ -214,14 +210,6 @@ section {
   margin: 0 auto;
 }
 
-.section1 {
-  background-color: blue;
-}
-
-.section2 {
-  background-color: red;
-}
-
 /*---- RESPONSIVE ----*/
 /* TABLET */
 @media screen and (max-width: 845px) {
@@ -239,5 +227,5 @@ section {
 }
 
 /* MOBILE */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 445px) {
 }

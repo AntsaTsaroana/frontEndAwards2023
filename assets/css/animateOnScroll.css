@@ -1,0 +1,71 @@
+/* ANIMATION FROM THE TOP */
+.animateFromTop {
+  transform: translateY(-75px);
+  opacity: 0;
+  transition: none;
+}
+
+.animateFromTop.revealed {
+  transform: translateY(0);
+  opacity: 1;
+  transition: 0.8s;
+}
+
+.animateFromTop.staticTop {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* ANIMATION FROM THE BOTTOM */
+.animateFromBottom {
+  transform: translateY(75px);
+  opacity: 0;
+  transition: none;
+}
+
+.animateFromBottom.revealed {
+  transform: translateY(0);
+  opacity: 1;
+  transition: 0.8s;
+}
+
+.animateFromBottom.staticBottom {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* ANIMATION FROM THE LEFT */
+.animateFromLeft {
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: none;
+}
+
+.animateFromLeft.revealed {
+  transform: translateX(0);
+  opacity: 1;
+  transition: 0.8s;
+}
+
+.animateFromLeft.staticLeft {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* ANIMATION FROM THE RIGHT */
+.animateFromRight {
+  transform: translateX(50%);
+  opacity: 0;
+  transition: none;
+}
+
+.animateFromRight.revealed {
+  transform: translateX(0);
+  opacity: 1;
+  transition: 0.8s;
+}
+
+.animateFromRight.staticRight {
+  transform: translateX(0);
+  opacity: 1;
+}

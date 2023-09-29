@@ -1,5 +1,21 @@
 /* VARIABLE */
 :root {
-    --primary-color: #f3f3f3;
-    --maxWidth: min(1366px, 100%);
-  }
+  --primary-color: #f3f3f3;
+  --maxWidth: min(1366px, 100%);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.hideElement {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}

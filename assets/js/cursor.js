@@ -1,4 +1,5 @@
-// CURSOR ----------
+// CURSOR --------------------
+
 var cur = document.querySelector(".cursor");
 
 // Fonction pour mettre à jour la position de l'élément ".cursor"

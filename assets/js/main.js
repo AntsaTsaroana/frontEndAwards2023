@@ -1,4 +1,5 @@
-// HOVERING ELEMENT ----------
+// HOVERING ELEMENT --------------------
+
 var cursor = document.querySelector(".cursor");
 const links = document.querySelectorAll("a");
 const menuBurger = document.querySelector(".toggle-nav");

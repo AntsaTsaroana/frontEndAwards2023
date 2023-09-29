@@ -24,7 +24,8 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/loading.css" />
     <link rel="stylesheet" href="./assets/css/cursor.css" />
-    <link rel="stylesheet" href="./assets/css/customScrollBar..css" />
+    <link rel="stylesheet" href="./assets/css/customScrollBar.css" />
+    <link rel="stylesheet" href="./assets/css/animateOnScroll.css" />
   </head>
 
   <body>
@@ -33,49 +34,68 @@
 
     <!-- LOADING -->
     <div class="wrapperLoad">
-      <div class="loader"></div>
+      <div class="loader">
+        <span>
+          <h2 id="pourcentage">0%</h2>
+          <h1>RETINA</h1>
+          <div class="container-progress-bar">
+            <span id="progress-bar"></span>
+          </div>
+        </span>
+      </div>  
     </div>
 
     <!-- NAVBAR -->
     <nav>
-        <div class="innerNav">
-          <div class="logo">
-            <img src="./assets/img/logo.png" alt="logo" />
-          </div>
-          <ul>
-            <li><a href="#" class="test">Accueil</a></li>
-            <li><a href="#apropos">A-propos</a></li>
-            <li><a href="#partenaires">Partenaires</a></li>
-            <li><a href="#participants">Participants</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-
-          <!-- Nav Mobile -->
-          <div class="nav-mobile">
-            <a href="#">Accueil</a>
-            <a href="#apropos">A-propos</a>
-            <a href="#partenaires">Partenaires</a>
-            <a href="#participants">Participants</a>
-            <a href="#contact">Contact</a>
-          </div>
-          <!-- Burger Menu -->
-          <button type="button" aria-label="burger Menu" class="toggle-nav">
-            <span class="line l1"></span>
-            <span class="line l2"></span>
-            <span class="line l3"></span>
-          </button>
+      <div class="innerNav">
+        <div class="logo">
+          <img src="./assets/img/logo.png" alt="logo" />
         </div>
-      </nav>
+        <ul>
+          <li><a href="#header" class="active">Accueil</a></li>
+          <li><a href="#section1">A-propos</a></li>
+          <li><a href="#section2">Partenaires</a></li>
+          <li><a href="./pages/ourTeam.html">Retina</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Nav Mobile -->
+        <div class="nav-mobile">
+          <span class="hideElement">
+            <a href="#header" class="active" style="--i:0.5s">Accueil</a>
+          </span>
+          <span class="hideElement">
+            <a href="#section1" class="active" style="--i:0.6s">A-propos</a>
+          </span>
+          <span class="hideElement">
+            <a href="#section2" class="active" style="--i:0.7s">Partenaires</a>
+          </span class="hideElement">
+          <span class="hideElement">
+            <a href="#participants" class="active" style="--i:0.8s">Participants</a>
+          </span>
+          <span class="hideElement">
+            <a href="#contact" class="active" style="--i:0.9s">Contact</a>
+          </span>
+        </div>
+        <!-- Burger Menu -->
+        <button type="button" aria-label="burger Menu" class="toggle-nav">
+          <span class="line l1"></span>
+          <span class="line l2"></span>
+          <span class="line l3"></span>
+        </button>
+      </div>
+    </nav>
 
     <!-- SMOOTH CONTAINER -->
     <div class="smooth-scroll-wrapper">
       <div class="smooth-scroll-wrapper-content">
         <!-- HEADER -->
-        <header></header>
+        <header id="header" class="sect">
+        </header>
 
         <!-- SECTION -->
-        <section class="section1"></section>
-        <section class="section2"></section>
+        <section class="sect section1" id="section1"></section>
+        <section class="sect section2" id="section2"></section>
       </div>
     </div>
 
@@ -85,5 +105,7 @@
     <script src="./assets/js/scrollSmooth.js"></script>
     <script src="./assets/js/cursor.js"></script>
     <script src="./assets/js/burgerMenu.js"></script>
+    <script src="./assets/js/animateOnScroll.js"></script>
+    <script src="./assets/js/goToSection.js"></script>
   </body>
 </html>

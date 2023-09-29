@@ -1,4 +1,5 @@
-// SCROLL SMOOTH ----------
+// SCROLL SMOOTH --------------------
+
 const body = document.body;
 const scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0];
 var heightInitial = scrollWrap.clientHeight;

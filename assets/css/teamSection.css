@@ -10,8 +10,8 @@
 }
 
 :root {
-  --first-color: #202020;
-  --second-color: #fff;
+  --first-color: #fff;
+  --second-color: #202020;
 }
 
 img {
@@ -27,7 +27,7 @@ body {
   overflow-x: hidden;
 }
 
-main {
+.mainSection {
   position: relative;
   top: 40px;
   display: grid;
@@ -38,7 +38,7 @@ main {
   margin: 0 auto;
 }
 
-section {
+.mainSection section {
   display: flex;
   justify-content: center;
   align-items: center;

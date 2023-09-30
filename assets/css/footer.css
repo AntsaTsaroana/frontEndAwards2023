@@ -1,0 +1,159 @@
+:root {
+    --DarkGrey : #1b1b1b;
+    --Grey : #eae9eb;
+    --Grey2 : #686f75;
+    --White : #d4d5d7;
+    --White2 : hsl(220, 4%, 64%);
+    --Orange : #fd970b;
+    --Orange2 : hsl(35, 98%, 42%);
+    --PoppinsRegular : Poppins Regular;
+    --PoppinsBold : Poppins Bold;
+    --PoppinsExtraBold : Poppins ExtraBold;
+    --PoppinsItalic : Poppins Italic;
+}
+@font-face {
+    font-family: Poppins Regular;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: Poppins Bold;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: Poppins ExtraBold;
+    src: url(../fonts/Poppins-ExtraBold.ttf);
+}
+@font-face {
+    font-family: Poppins Italic;
+    src: url(../fonts/Poppins-Italic.ttf);
+}
+footer {
+    background: var(--Grey);
+    display: flex;
+    flex-wrap: wrap;
+    /* font-size: .9rem; */
+    line-height: 1.4;
+    align-items: start;
+    justify-content: center;
+    gap: 3rem;
+    padding-block: 5rem;
+    padding-inline: 2rem;
+    color: var(--Grey2);
+}
+footer>div {
+    flex: 1;
+    max-width: 15rem;
+}
+footer .header {
+    /* font-family: var(--PoppinsExtraBold); */
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--White);
+    margin-block-end: 1rem;
+}
+/* footer .brand {
+    max-width: 20rem;
+} */
+footer .brand .header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+footer .brand .header svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    /* border: 1px solid var(--Grey2);
+    border-radius: 5rem; */
+}
+footer .brand .header p span {
+    font-family: var(--PoppinsItalic);
+    font-size: .9rem;
+    text-transform: lowercase;
+    letter-spacing: normal;
+}
+footer .brand>p:nth-child(2) {
+    margin-bottom: 1rem;
+    /* background: red; */
+}
+footer .categories ul li {
+    /* margin-bottom: .5rem; */
+    text-transform: uppercase;
+    /* font-size: .9rem; */
+}
+footer .tagsSection .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .2rem;
+    /* inline: .5rem; */
+}
+footer .tagsSection .tags .tag {
+    border: 1px solid var(--Grey2);
+    padding: .2rem 1rem;
+    border-radius: 5rem;
+    text-transform: uppercase;
+    font-size: .9rem;
+    cursor: pointer;
+    transition: .5s ease;
+}
+footer .tagsSection .tags .tag:hover {
+    background: var(--DarkGrey);
+}
+footer .subscribe form {
+    display: flex;
+}
+footer .subscribe form input {
+    border: none;
+}
+footer .subscribe form input[type = "email"] {
+    border-top-left-radius: .3rem;
+    border-bottom-left-radius: .3rem;
+    padding: 1rem 1.2rem;
+    background: var(--Grey2);
+    color: var(--White);
+    border: 1px solid #ffffff00;
+    transition: .5s ease;
+}
+footer .subscribe form input[type = "email"]:focus {
+    outline: none;
+    border: 1px solid var(--White);
+}
+footer .subscribe form input[type = "email"]::placeholder {
+    color: var(--White2);
+}
+footer .subscribe form button {
+    padding-inline: 1rem;
+    border: none;
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    background: var(--Orange);
+    cursor: pointer;
+    transition: .5s ease;
+}
+footer .subscribe form button:hover {
+    background: var(--Orange2);
+}
+footer .subscribe form button svg {
+    width: 1.5rem;
+    height: auto;
+    color: var(--White);
+}
+footer .subscribe .socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+footer .subscribe .socials svg {
+    width: 1.3rem;
+    height: auto;
+    color: var(--Grey2);
+    transition: .5s ease;
+    cursor: pointer;
+}
+footer .subscribe .socials svg:hover {
+    color: var(--White);
+}
+/* @media screen and (max-width: 800px) {
+    
+} */

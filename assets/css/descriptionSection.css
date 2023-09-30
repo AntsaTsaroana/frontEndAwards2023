@@ -2,7 +2,8 @@
 
 .descriptionSection {
   background: var(--White);
-  padding: 2rem 15vh;
+  padding: 2rem 15vw;
+  /* padding: 2rem 50vh; */
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -16,6 +17,7 @@
   /* min-width: 270px;
   max-width: 50rem; */
   width: 11rem;
+  /* margin: 5rem; */
 }
 .descriptionSection .top {
   display: flex;
@@ -61,6 +63,14 @@
   /* height: max-content; */
   height: auto;
   background: var(--OffWhite);
+  background-size: cover;
+  background-position: center;
+}
+.descriptionSection .top .image {
+  background-image: url(../img/img/robot\ \(1\).jpg);
+}
+.descriptionSection .bottom .image {
+  background-image: url(../img/img/robot\ \(2\).jpg);
 }
 .descriptionSection .bottom {
   display: flex;
@@ -87,7 +97,7 @@
 .descriptionSection .bottom .texts button {
   margin-top: 1rem;
   padding: .7rem 1.5rem;
-  background: var(--Brown3);
+  background: var(--Brown2);
   border-radius: 3rem;
   color: var(--White);
   border: none;

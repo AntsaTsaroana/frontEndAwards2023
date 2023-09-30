@@ -21,7 +21,7 @@ a {
   font-size: clamp(16px, 1.5vw, 15px);
 }
 
-p {
+p, ul li {
   /* font-size: calc(12px + 0.390625vw); */
   font-size: clamp(12px, 1vw, 15px);
   line-height:20px;

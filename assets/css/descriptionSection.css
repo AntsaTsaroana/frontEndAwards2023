@@ -1,0 +1,127 @@
+@import url(./variable.css);
+
+.descriptionSection {
+  background: var(--White);
+  padding: 2rem 15vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /* width: var(--maxWidth); */
+  /* max-width: 100rem; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.descriptionSection .image {
+  /* min-width: 270px;
+  max-width: 50rem; */
+  width: 11rem;
+}
+.descriptionSection .top {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  gap: 2rem;
+}
+.descriptionSection .top .texts {
+  /* max-width: 50vh; */
+}
+.descriptionSection .top .texts .title, 
+.descriptionSection .bottom .texts .title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: normal;
+}
+.descriptionSection .top .texts .description,
+.descriptionSection .bottom .texts .description {
+  line-height: normal;
+  margin-block: 1rem;
+}
+.descriptionSection .top .texts .counterBlock {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+}
+.descriptionSection .top .texts .counterBlock .counter {
+  /* border: 1px solid red; */
+  max-width: 7rem;
+}
+.descriptionSection .top .texts .counterBlock .counter .number {
+  color: var(--Brown2);
+}
+.descriptionSection .top .image,
+.descriptionSection .bottom .image {
+  aspect-ratio: 1;
+  width: 50rem;
+  /* max-width: 20rem; */
+  border-radius: .5rem;
+  /* height: max-content; */
+  height: auto;
+  background: var(--OffWhite);
+}
+.descriptionSection .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  gap: 2rem;
+}
+/* .descriptionSection .bottom .image {
+  aspect-ratio: 1;
+  width: 50rem;
+  border-radius: .5rem;
+  height: auto;
+  background: var(--OffWhite);
+} */
+.descriptionSection .bottom .texts .list li {
+  display: inline-block;
+  margin-right: 3rem;
+  list-style-type: circle;
+  font-weight: 600;
+  /* margin: 1rem; */
+  /* font-size: 1rem; */
+}
+.descriptionSection .bottom .texts button {
+  margin-top: 1rem;
+  padding: .7rem 1.5rem;
+  background: var(--Brown3);
+  border-radius: 3rem;
+  color: var(--White);
+  border: none;
+}
+
+@media screen and (max-width: 900px) {
+  .descriptionSection {
+    padding-inline: 20vw;
+    padding-block: 5rem;
+    gap: 5rem;
+  }
+  .descriptionSection .top,
+  .descriptionSection .bottom {
+    flex-wrap: wrap;
+  }
+  .descriptionSection .top .texts,
+  .descriptionSection .bottom .texts {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .descriptionSection .top .texts .counterBlock {
+    display: flex;
+    justify-content: center;
+  }
+  .descriptionSection .bottom {
+    flex-direction: column-reverse;
+  }
+  .descriptionSection .bottom button {
+    width: 9rem;
+    margin: 0 auto;
+  }
+  .descriptionSection .image {
+    max-width: 25rem;
+  }
+}

@@ -27,7 +27,7 @@ window.addEventListener("load", function () {
       loadingOverlay.style.display = "none";
       document.documentElement.style.overflow = "auto";
     // }, 1000);
-    }, 100);
+    }, 1000);
   // }, 3000);
-  }, 200);
+  }, 100);
 });

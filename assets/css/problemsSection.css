@@ -19,7 +19,7 @@
   background: var(--OffWhite);
   color: var(--DarkGrey);
   padding-block: 2rem;
-  /* min-height: 100vh; */
+  min-height: 100vh;
 }
 .problems .sectionTitle {
   font-size: 2rem;

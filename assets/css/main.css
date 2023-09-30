@@ -2,7 +2,8 @@
 @import url(./fontSizeReset.css);
 /* @import url(./section1.css); */
 @import url(./problemsSection.css);
-@import url(./section2.css);
+/* @import url(./section2.css); */
+@import url(./descriptionSection.css);
 
 /* RESET CSS */
 *,
@@ -205,11 +206,11 @@ header {
 }
 
 /* SECTION */
-section {
+/* section {
   width: var(--maxWidth);
   min-height: 100vh;
   margin: 0 auto;
-}
+} */
 
 /*---- RESPONSIVE ----*/
 /* TABLET */

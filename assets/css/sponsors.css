@@ -1,0 +1,35 @@
+/* SPONSORS */
+
+.sectionSponsor {
+  width: var(--maxWidth);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.itemSpons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 95%;
+  margin: 25px auto;
+}
+
+.oneItem {
+  width: 170px;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.oneItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: grayscale(1);
+  transition: 0.5s;
+}
+
+.oneItem img:hover {
+  filter: grayscale(0);
+}

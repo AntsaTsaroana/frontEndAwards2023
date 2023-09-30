@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/favicon/favicon-16x16.png"
+    />
+    <title>Page formulaire</title>
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/loading.css" />
+    <link rel="stylesheet" href="../assets/css/cursor.css" />
+    <link rel="stylesheet" href="../assets/css/customScrollBar..css" />
+    <link rel="stylesheet" href="../assets/css/teamSection.css" />
+    <link rel="stylesheet" href="../assets/css/stepForm.css" />
+  </head>
+  <body>
+    <!-- CURSOR -->
+    <div class="cursor"></div>
+
+    <!-- LOADING -->
+    <div class="wrapperLoad">
+      <div class="loader">
+        <span>
+          <h2 id="pourcentage">0%</h2>
+          <h1>RETINA</h1>
+          <div class="container-progress-bar">
+            <span id="progress-bar"></span>
+          </div>
+        </span>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav>
+      <div class="innerNav">
+        <div class="logo">
+          <img src="../assets/img/logo.png" style="top: 5px" alt="logo" />
+        </div>
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="form">
+      <div class="body">
+        <div class="header">
+          <h2>Formulaire Multi-Step</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+        </div>
+        <div class="pagination">
+          <div class="number active">1</div>
+          <div class="bar"></div>
+          <div class="number">2</div>
+          <div class="bar"></div>
+          <div class="number">3</div>
+          <div class="bar"></div>
+          <div class="number">4</div>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <h4>Contact details</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <div class="grid">
+              <div class="col">
+                <label for="name">Name</label>
+                <input type="text" id="name" />
+              </div>
+              <div class="col">
+                <label for="email">Email</label>
+                <input type="email" id="email" />
+              </div>
+              <div class="col">
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" />
+              </div>
+              <div class="col">
+                <label for="company">Company</label>
+                <input type="text" id="company" />
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <h4>Areas of intrest</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="grid">
+              <div class="col">
+                <div class="checkbox">
+                  <input type="checkbox" id="intrest-finance" />
+                  <label for="intrest-finance">Finance</label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="checkbox">
+                  <input type="checkbox" id="intrest-maths" />
+                  <label for="intrest-maths">Maths</label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="checkbox">
+                  <input type="checkbox" id="intrest-programming" />
+                  <label for="intrest-programming">Programming</label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="checkbox">
+                  <input type="checkbox" id="intrest-music" />
+                  <label for="intrest-music">Music</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <h4>Secure your account</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <div class="grid">
+              <div class="col">
+                <label for="password">Password</label>
+                <input type="password" id="password" />
+              </div>
+              <div class="col">
+                <label for="retype-password">Retype Password</label>
+                <input type="password" id="retype-password" />
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="confirmation">
+              <h2>Create my account</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem
+                nam dolores porro, tempore suscipit minima exercitationem nemo
+                nesciunt rerum illo. Qui inventore temporibus autem molestias
+                suscipit officiis reprehenderit aspernatur officia.
+              </p>
+              <div>
+                <button>Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <button class="prev" disabled>Precedent</button>
+          <button class="next">Suivant</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script src="../assets/js/loadingScreen.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/cursor.js"></script>
+    <script src="../assets/js/burgerMenu.js"></script>
+    <script src="../assets/js/stepForm.js"></script>
+  </body>
+</html>

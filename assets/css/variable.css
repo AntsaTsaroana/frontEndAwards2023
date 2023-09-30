@@ -1,6 +1,7 @@
 /* VARIABLE */
 :root {
-  --primary-color: #f3f3f3;
+  --primary-color: #222;
+  --secondary-color: #fff;
   --maxWidth: min(1366px, 100%);
 }
 

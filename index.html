@@ -28,6 +28,8 @@
     <link rel="stylesheet" href="./assets/css/animateOnScroll.css" />
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/sponsors.css" />
+    <link rel="stylesheet" href="./assets/css/circle.css" />
   </head>
 
   <body>
@@ -56,9 +58,11 @@
         <ul>
           <li><a href="#header" class="active">Accueil</a></li>
           <li><a href="#problems">Problemes</a></li>
-          <li><a href="#descriptionSection">Partenaires</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#partenaires">Partenaires</a></li>
           <li><a href="./pages/ourTeam.html">Retina</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="./pages/stepForm.html">Formulaire</a></li>
+          <li><a href="./pages/faqPage.html">FAQ</a></li>
         </ul>
 
         <!-- Nav Mobile -->
@@ -67,16 +71,19 @@
             <a href="#header" class="active" style="--i:0.5s">Accueil</a>
           </span>
           <span class="hideElement">
-            <a href="#problems" class="active" style="--i:0.6s">A-propos</a>
+            <a href="#problems" class="active" style="--i:0.6s">Problemes</a>
           </span>
           <span class="hideElement">
-            <a href="#descriptionSection" class="active" style="--i:0.7s">Partenaires</a>
+            <a href="#solutions" class="active" style="--i:0.6s">Solutions</a>
+          </span>
+          <span class="hideElement">
+            <a href="#partenaires" class="active" style="--i:0.7s">Partenaires</a>
           </span class="hideElement">
           <span class="hideElement">
             <a href="#participants" class="active" style="--i:0.8s">Participants</a>
           </span>
           <span class="hideElement">
-            <a href="#contact" class="active" style="--i:0.9s">Contact</a>
+            <a href="./pages/faqPage.html" class="active" style="--i:0.9s">FAQ</a>
           </span>
         </div>
         <!-- Burger Menu -->
@@ -91,8 +98,16 @@
     <!-- SMOOTH CONTAINER -->
     <div class="smooth-scroll-wrapper">
       <div class="smooth-scroll-wrapper-content">
+        
         <!-- HEADER -->
         <header id="header" class="sect">
+          <!-- CIRCLE -->
+    <div class="circle">
+      <div class="logoCircle"></div>
+      <div class="textCirle">
+        <p>IA - Mental - Health - Frontend</p>
+      </div>
+    </div>
           <div class="container">
             <span>
               <h1>Ensemble l'IA au service de l'humanité</h1>
@@ -109,6 +124,7 @@
 
         <!-- SECTION -->
         <!-- <section class="sect section1" id="section1"></section> -->
+        <!-- SECTION PROBLEMES -->
         <section class="sect problems" id="problems">
           <p class="sectionTitle">Comment reconnaitre une dépression?</p>
           <div class="cards">
@@ -135,8 +151,9 @@
             </div>
           </div>
         </section>
+        <!-- SECTION DESCRIPTION -->
         <!-- <section class="sect section2" id="section2"></section> -->
-        <section class="sect descriptionSection" id="descriptionSection">
+        <section class="sect descriptionSection" id="solutions">
           <div class="top">
             <div class="texts">
               <p class="title">Un ami numérique qui vous veut du bien</p>
@@ -169,6 +186,30 @@
                 <li>imformations privées</li>
               </ul>
               <button>Lorem ipsum</button>
+            </div>
+          </div>
+        </section>
+        <!-- SPONSORS -->
+        <section class="sectionSponsor" id="partenaires">
+          <h2>Nos Sponsors</h2>
+          <div class="itemSpons">
+            <div class="oneItem">
+              <img src="./assets/img/sponsoring/Logo WebP/techZaraText.webp" alt="">
+            </div>
+            <div class="oneItem">
+              <img src="./assets/img/sponsoring/Logo WebP/airtelText.webp" alt="">
+            </div>
+            <div class="oneItem">
+              <img src="./assets/img/sponsoring/Logo WebP/bocasayText.webp" alt="">
+            </div>
+            <div class="oneItem">
+              <img src="./assets/img/sponsoring/Logo WebP/etechText.webp" alt="">
+            </div>
+            <div class="oneItem">
+              <img src="./assets/img/sponsoring/Logo WebP/myAgencyText.webp" alt="">
+            </div>
+            <div class="oneItem">
+              <img src="./assets/img/sponsoring/Logo WebP/pulseText.webp" alt="">
             </div>
           </div>
         </section>
@@ -237,5 +278,6 @@
     <script src="./assets/js/animateOnScroll.js"></script>
     <script src="./assets/js/goToSection.js"></script>
     <script src="./assets/js/headerScript.js"></script>
+    <script src="./assets/js/circle.js"></script>
   </body>
 </html>

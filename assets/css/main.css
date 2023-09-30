@@ -1,6 +1,7 @@
 @import url(./variable.css);
 @import url(./fontSizeReset.css);
-@import url(./section1.css);
+/* @import url(./section1.css); */
+@import url(./problemsSection.css);
 @import url(./section2.css);
 
 /* RESET CSS */
@@ -206,7 +207,7 @@ header {
 /* SECTION */
 section {
   width: var(--maxWidth);
-  height: 100vh;
+  min-height: 100vh;
   margin: 0 auto;
 }
 

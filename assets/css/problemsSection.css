@@ -1,0 +1,58 @@
+:root {
+  --Brown : #614235;
+  --Brown2 : #927d6b;
+  --Brown3 : #dfc9a2;
+  --DarkGrey : #686f75;
+  --LightGrey : #eae9eb;
+  --OffWhite : #f6f7f8;
+  --White: #fefdfe;
+}
+
+@import url(./variable.css);
+
+.problems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  background: var(--OffWhite);
+  color: var(--DarkGrey);
+  padding-block: 2rem;
+  /* min-height: 100vh; */
+}
+.problems .sectionTitle {
+  font-size: 2rem;
+  text-align: center;
+  line-height: normal;
+  margin-inline: 1rem;
+  max-width: 39rem;
+  /* border: 1px solid red; */
+}
+.problems .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.problems .cards .card {
+  background: var(--White);
+  padding: 1rem;
+  max-width: 14rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 0 1rem var(--LightGrey);
+  border-radius: .5rem;
+}
+.problems .cards .card .image {
+  aspect-ratio: 1;
+  width: 12rem;
+  height: auto;
+  background: var(--LightGrey);
+  border-radius: .5rem;
+}
+.problems .cards .card .texts h3 {
+  margin-bottom: .5rem;
+}

@@ -51,8 +51,10 @@
   width: 12rem;
   height: auto;
   background: var(--LightGrey);
+  background-position: center;
   background-size: cover;
   border-radius: .5rem;
+  transition: .5s ease;
 }
 .problems .cards .card:nth-child(1) .image {
   background-image: url(../img/img/problemes\ \(1\).jpg);

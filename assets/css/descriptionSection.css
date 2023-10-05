@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  position: relative;
   /* width: var(--maxWidth); */
   /* max-width: 100rem; */
   /* display: flex;
@@ -72,6 +73,48 @@
 .descriptionSection .bottom .image {
   background-image: url(../img/img/robot\ \(2\).jpg);
 }
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.descriptionSection .infiniteScrollCarousselContainer {
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: 100;
+  background: var(--LightGrey);
+  width: 110vw;
+  left: -20vw;
+  position: relative;
+  gap: .5rem;
+  display: flex;
+}
+.descriptionSection .infiniteScrollCarousselContainer .infiniteScrollCaroussel {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+  animation: slide 20s infinite linear;
+  padding-block: 1rem;
+}
+.descriptionSection .infiniteScrollCarousselContainer .infiniteScrollCaroussel h3 {
+  font-weight: 100;
+  /* font-size: 1rem; */
+}
+.descriptionSection .infiniteScrollCarousselContainer .infiniteScrollCaroussel .star {
+  aspect-ratio: 1;
+  width: 1rem;
+  height: 1rem;
+  /* background: red; */
+  background-image: url(../img/svg/star.svg);
+  background-size: cover;
+  background-position: center;
+}
+
 .descriptionSection .bottom {
   display: flex;
   align-items: center;

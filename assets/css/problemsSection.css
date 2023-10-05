@@ -4,6 +4,7 @@
   --Brown3 : #dfc9a2;
   --DarkGrey : #686f75;
   --LightGrey : #eae9eb;
+  --LightGrey2 : #d1cfd3;
   --OffWhite : #f6f7f8;
   --White: #fefdfe;
 }
@@ -45,6 +46,11 @@
   gap: 1rem;
   box-shadow: 0 0 1rem var(--LightGrey);
   border-radius: .5rem;
+  transition: .5s ease;
+}
+.problems .cards .card:hover {
+  box-shadow: 0 0 2rem var(--LightGrey2);
+  transform: translateY(-2%) scale(1.03);
 }
 .problems .cards .card .image {
   aspect-ratio: 1;

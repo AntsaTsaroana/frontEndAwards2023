@@ -26,8 +26,8 @@ window.addEventListener("load", function () {
     setTimeout(function () {
       loadingOverlay.style.display = "none";
       document.documentElement.style.overflow = "auto";
-    // }, 1000);
-    }, 100);
-  // }, 3000);
-  }, 100);
+    }, 1000);
+    // }, 100);
+  }, 3000);
+  // }, 100);
 });
